@@ -9,6 +9,8 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <AppBarButton HorizontalAlignment="Center" Icon="Accept" Label="AppBarButton" Margin="0,456,0,0" VerticalAlignment="Top" Height="112" Width="345" Click="OnClick"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,239,0,0" Text="Welcome" VerticalAlignment="Top" AutomationProperties.AccessibilityView="Content" Width="173" Height="81" FontSize="36"/>
 
     </Grid>
 </Page>
