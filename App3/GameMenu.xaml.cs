@@ -28,10 +28,67 @@ namespace App3
 
     }
 
+    public class BetChecker
+    {
+        private List<int> red = new List<int> { 1,3,5,7,9,12,14,16,18,19,21,23,25,27,30,32,34,36};
+
+        public int CheckSingles(List<int> list, int rouletteNumber)
+        {
+            if (list.Contains(rouletteNumber))
+            {
+                return 1;
+            }
+
+            else
+            {
+                return -1;
+            }
+        }
+
+        public double CheckForRows(List<int> list, int rouletteNumber)
+        {
+            if (list.Contains(rouletteNumber))
+            {
+                return 0.33;
+            }
+            else
+            {
+                return -1;
+            }
+        }
+
+        public double CheckForStreet(List<int> list, int rouletteNumber, int row)
+        {
+            if (rouletteNumber % 3 == row)
+            {
+                return 0.33;
+            }
+            else
+            {
+                return -1;
+            }
+        }
+
+        public int CheckForColor(int color)
+        {
+            if (red.Contains(color))
+            {
+                return 1;
+            }
+            else
+            {
+                return -1;
+            }
+        }
+
+    }
     
     public sealed partial class GameMenu : Page 
     {
-        public Player Player { get; set; }
+        private Player Player = new Player();
+        private Random RouletteNumberGenerator = new Random();
+        private BetChecker BetChecker = new BetChecker();
+
         private List<int> row1 = new List<int>{1,4,7,10,13,16,19,22,25,28,31,34};
         private List<int> row2 = new List<int>{2,5,8,11,14,17,20,23,26,29,32,35};
         private List<int> row3 = new List<int>{3,6,9,12,15,18,21,24,27,30,33,36};
@@ -39,16 +96,14 @@ namespace App3
         private const int DoubleZero = -2;
         private const int SingleZero = -1;
 
+        private const int Red = -3;
+        private const int Black = -4;
+
 
 
         public GameMenu()
         {
             this.InitializeComponent();
-            Player = new Player();
-
-            
-            
-
         }
 
         private void BetOn1(object sender, RoutedEventArgs e)
@@ -84,6 +139,11 @@ namespace App3
         private void BetOn7(object sender, RoutedEventArgs e)
         {
             Player.Bet.currentBet.Add(7);
+        }
+
+        private void BetOn8(object sender, RoutedEventArgs e)
+        {
+            Player.Bet.currentBet.Add(8);
         }
 
         private void BetOn9(object sender, RoutedEventArgs e)
@@ -219,7 +279,6 @@ namespace App3
         private void BetOn35(object sender, RoutedEventArgs e)
         {
             Player.Bet.currentBet.Add(35);
-
         }
 
         private void BetOn36(object sender, RoutedEventArgs e)
@@ -294,13 +353,9 @@ namespace App3
 
         private void BetOnBlack(object sender, RoutedEventArgs e)
         {
-            Player.Bet.currentBet.Add(-3);
+            
         }
 
-        private void BetOn8(object sender, RoutedEventArgs e)
-        {
-            Player.Bet.currentBet.Add(8);
-        }
     }
 
     public class Bet
