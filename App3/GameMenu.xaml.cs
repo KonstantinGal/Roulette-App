@@ -45,21 +45,9 @@ namespace App3
             }
         }
 
-        public double CheckForRows(List<int> list, int rouletteNumber)
+        public double CheckForThirds(List<int> list, int rouletteNumber)
         {
             if (list.Contains(rouletteNumber))
-            {
-                return 0.33;
-            }
-            else
-            {
-                return -1;
-            }
-        }
-
-        public double CheckForStreet(List<int> list, int rouletteNumber, int row)
-        {
-            if (rouletteNumber % 3 == row)
             {
                 return 0.33;
             }
@@ -81,209 +69,65 @@ namespace App3
             }
         }
 
+        public int CheckFirstHalf(int rouletteNumber)
+        {
+            if (rouletteNumber > 0 && rouletteNumber <= 18)
+            {
+                return 1;
+            }
+
+            else
+            {
+                return -1;
+            }
+        }
+
+        public int CheckSecondHalf(int rouletteNumber)
+        {
+            if (rouletteNumber > 18 && rouletteNumber <= 36)
+            {
+                return 1;
+            }
+
+            else
+            {
+                return -1;
+            }
+        }
     }
     
     public sealed partial class GameMenu : Page 
     {
-        private Player Player = new Player();
+        public Player Player = new Player
+        {
+            Name = 
+        };
         private Random RouletteNumberGenerator = new Random();
         private BetChecker BetChecker = new BetChecker();
 
-        private List<int> row1 = new List<int>{1,4,7,10,13,16,19,22,25,28,31,34};
-        private List<int> row2 = new List<int>{2,5,8,11,14,17,20,23,26,29,32,35};
-        private List<int> row3 = new List<int>{3,6,9,12,15,18,21,24,27,30,33,36};
+        private List<int> row1 = new List<int>{ 1,4,7,10,13,16,19,22,25,28,31,34 };
+        private List<int> row2 = new List<int>{ 2,5,8,11,14,17,20,23,26,29,32,35 };
+        private List<int> row3 = new List<int>{ 3,6,9,12,15,18,21,24,27,30,33,36 };
 
-        private const int DoubleZero = -2;
-        private const int SingleZero = -1;
+        private List<int> street1 = new List<int> { 1,2,3,4,5,6,7,8,9,10,11,12 };
+        private List<int> street2 = new List<int> { 12,13,14,15,16,17,18,19,20,21,22,23,24 };
+        private List<int> street3 = new List<int> { 25,26,27,28,29,30,31,32,33,34,35,36 };
 
-        private const int Red = -3;
-        private const int Black = -4;
+        private const int DoubleZero = -1;
+        private const int SingleZero = -0;
 
 
 
         public GameMenu()
         {
             this.InitializeComponent();
+            
         }
 
-        private void BetOn1(object sender, RoutedEventArgs e)
+        private void BetOnSingle(object sender, RoutedEventArgs e)
         {
-            Player.Bet.currentBet.Add(1);
-        }
-
-        private void BetOn2(object sender, RoutedEventArgs e)
-        {
-            Player.Bet.currentBet.Add(2);
-        }
-
-        private void BetOn3(object sender, RoutedEventArgs e)
-        {
-            Player.Bet.currentBet.Add(3);
-        }
-
-        private void BetOn4(object sender, RoutedEventArgs e)
-        {
-            Player.Bet.currentBet.Add(4);
-        }
-
-        private void BetOn5(object sender, RoutedEventArgs e)
-        {
-            Player.Bet.currentBet.Add(5);
-        }
-
-        private void BetOn6(object sender, RoutedEventArgs e)
-        {
-            Player.Bet.currentBet.Add(6);
-        }
-
-        private void BetOn7(object sender, RoutedEventArgs e)
-        {
-            Player.Bet.currentBet.Add(7);
-        }
-
-        private void BetOn8(object sender, RoutedEventArgs e)
-        {
-            Player.Bet.currentBet.Add(8);
-        }
-
-        private void BetOn9(object sender, RoutedEventArgs e)
-        {
-            Player.Bet.currentBet.Add(9);
-        }
-
-        private void BetOn10(object sender, RoutedEventArgs e)
-        {
-            Player.Bet.currentBet.Add(10);
-        }
-
-        private void BetOn11(object sender, RoutedEventArgs e)
-        {
-            Player.Bet.currentBet.Add(11);
-        }
-
-        private void BetOn12(object sender, RoutedEventArgs e)
-        {
-            Player.Bet.currentBet.Add(12);
-        }
-
-        private void BetOn13(object sender, RoutedEventArgs e)
-        {
-            Player.Bet.currentBet.Add(13);
-        }
-
-        private void BetOn14(object sender, RoutedEventArgs e)
-        {
-            Player.Bet.currentBet.Add(14);
-        }
-
-        private void BetOn15(object sender, RoutedEventArgs e)
-        {
-            Player.Bet.currentBet.Add(15);
-        }
-
-        private void BetOn16(object sender, RoutedEventArgs e)
-        {
-            Player.Bet.currentBet.Add(16);
-        }
-
-        private void BetOn17(object sender, RoutedEventArgs e)
-        {
-            Player.Bet.currentBet.Add(17);
-        }
-
-        private void BetOn18(object sender, RoutedEventArgs e)
-        {
-            Player.Bet.currentBet.Add(18);
-        }
-
-        private void BetOn20(object sender, RoutedEventArgs e)
-        {
-            Player.Bet.currentBet.Add(20);
-        }
-
-        private void BetOn19(object sender, RoutedEventArgs e)
-        {
-            Player.Bet.currentBet.Add(19);
-        }
-
-        private void BetOn21(object sender, RoutedEventArgs e)
-        {
-            Player.Bet.currentBet.Add(21);
-        }
-
-        private void BetOn22(object sender, RoutedEventArgs e)
-        {
-            Player.Bet.currentBet.Add(22);
-        }
-
-        private void BetOn23(object sender, RoutedEventArgs e)
-        {
-            Player.Bet.currentBet.Add(23);
-        }
-
-        private void BetOn24(object sender, RoutedEventArgs e)
-        {
-            Player.Bet.currentBet.Add(24);
-        }
-
-        private void BetOn25(object sender, RoutedEventArgs e)
-        {
-            Player.Bet.currentBet.Add(25);
-        }
-
-        private void BetOn26(object sender, RoutedEventArgs e)
-        {
-            Player.Bet.currentBet.Add(26);
-        }
-
-        private void BetOn27(object sender, RoutedEventArgs e)
-        {
-            Player.Bet.currentBet.Add(27);
-        }
-
-        private void BetOn28(object sender, RoutedEventArgs e)
-        {
-            Player.Bet.currentBet.Add(28);
-        }
-
-        private void BetOn29(object sender, RoutedEventArgs e)
-        {
-            Player.Bet.currentBet.Add(29);
-        }
-
-        private void BetOn30(object sender, RoutedEventArgs e)
-        {
-            Player.Bet.currentBet.Add(30);
-        }
-
-        private void BetOn31(object sender, RoutedEventArgs e)
-        {
-            Player.Bet.currentBet.Add(31);
-        }
-
-        private void BetOn32(object sender, RoutedEventArgs e)
-        {
-            Player.Bet.currentBet.Add(32);
-        }
-
-        private void BetOn33(object sender, RoutedEventArgs e)
-        {
-            Player.Bet.currentBet.Add(33);
-        }
-
-        private void BetOn34(object sender, RoutedEventArgs e)
-        {
-            Player.Bet.currentBet.Add(34);
-        }
-
-        private void BetOn35(object sender, RoutedEventArgs e)
-        {
-            Player.Bet.currentBet.Add(35);
-        }
-
-        private void BetOn36(object sender, RoutedEventArgs e)
-        {
-            Player.Bet.currentBet.Add(36);
+            var pressedButtonNumber = ((Button)sender).Content.ToString();
+            Player.Bet.currentBet.Add(Convert.ToInt32(pressedButtonNumber));
         }
 
         private void BetOn0(object sender, RoutedEventArgs e)
