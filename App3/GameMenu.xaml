@@ -8,227 +8,232 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-        <Button Content="12" HorizontalAlignment="Left" Margin="250,100,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnSingle">
+    <Grid x:Name="Buttons" FocusVisualPrimaryBrush="#FFFC0000" FocusVisualSecondaryBrush="#99FFFFFF">
+        <Image Source="/Assets/background3.png" FocusVisualPrimaryBrush="{x:Null}" HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch"/>
+
+
+        <Rectangle HorizontalAlignment="Left" Height="316" Margin="190,84,0,0" VerticalAlignment="Top" Width="695" Fill="#7F006F28"/>
+
+
+
+        <Button Content="12" HorizontalAlignment="Left" Margin="394,110,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnSingle" FocusVisualPrimaryBrush="#FFFC0000" Background="#FFF23333" FocusVisualSecondaryBrush="#99FFFFFF" >
             <Button.RenderTransform>
                 <CompositeTransform Rotation="-90"/>
             </Button.RenderTransform>
         </Button>
-        <Button Content="7" HorizontalAlignment="Left" Margin="200,240,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Padding="4,4,8,5" Click="BetOnSingle">
+        <Button Content="7" HorizontalAlignment="Left" Margin="344,250,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Padding="4,4,8,5" Click="BetOnSingle" FocusVisualPrimaryBrush="#FFFC0000" Background="#FFF23333" FocusVisualSecondaryBrush="#99FFFFFF" >
             <Button.RenderTransform>
                 <CompositeTransform Rotation="-90"/>
             </Button.RenderTransform>
         </Button>
-        <Button Content="33" HorizontalAlignment="Left" Margin="600,100,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnSingle">
+        <Button Content="33" HorizontalAlignment="Left" Margin="730,110,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnSingle" FocusVisualSecondaryBrush="#99000000" Foreground="White" BorderBrush="#FF2F0000" Background="Black">
             <Button.RenderTransform>
                 <CompositeTransform Rotation="-90"/>
             </Button.RenderTransform>
         </Button>
-        <Button Content="14" HorizontalAlignment="Left" Margin="300,170,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnSingle">
+        <Button Content="14" HorizontalAlignment="Left" Margin="444,180,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnSingle" FocusVisualPrimaryBrush="#FFFC0000" Background="#FFF23333" FocusVisualSecondaryBrush="#99FFFFFF">
             <Button.RenderTransform>
                 <CompositeTransform Rotation="-90"/>
             </Button.RenderTransform>
         </Button>
-        <Button Content="17" HorizontalAlignment="Left" Margin="350,170,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnSingle">
+        <Button Content="17" HorizontalAlignment="Left" Margin="494,180,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnSingle" FocusVisualSecondaryBrush="#99000000" Foreground="White" BorderBrush="#FF2F0000" Background="Black">
             <Button.RenderTransform>
                 <CompositeTransform Rotation="-90"/>
             </Button.RenderTransform>
         </Button>
-        <Button Content="20" HorizontalAlignment="Left" Margin="400,170,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnSingle">
+        <Button Content="20" HorizontalAlignment="Left" Margin="544,180,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnSingle" FocusVisualSecondaryBrush="#99000000" Foreground="White" BorderBrush="#FF2F0000" Background="Black" >
             <Button.RenderTransform>
                 <CompositeTransform Rotation="-90"/>
             </Button.RenderTransform>
         </Button>
-        <Button Content="23" HorizontalAlignment="Left" Margin="450,170,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnSingle">
+        <Button Content="23" HorizontalAlignment="Left" Margin="584,180,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnSingle" FocusVisualPrimaryBrush="#FFFC0000" Background="#FFF23333" FocusVisualSecondaryBrush="#99FFFFFF" >
             <Button.RenderTransform>
                 <CompositeTransform Rotation="-90"/>
             </Button.RenderTransform>
         </Button>
-        <Button Content="27" HorizontalAlignment="Left" Margin="500,100,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnSingle">
+        <Button Content="27" HorizontalAlignment="Left" Margin="634,110,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnSingle" FocusVisualPrimaryBrush="#FFFC0000" Background="#FFF23333" FocusVisualSecondaryBrush="#99FFFFFF" >
             <Button.RenderTransform>
                 <CompositeTransform Rotation="-90"/>
             </Button.RenderTransform>
         </Button>
-        <Button Content="30" HorizontalAlignment="Left" Margin="550,100,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnSingle">
+        <Button Content="30" HorizontalAlignment="Left" Margin="679,110,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnSingle" FocusVisualPrimaryBrush="#FFFC0000" Background="#FFF23333" FocusVisualSecondaryBrush="#99FFFFFF">
             <Button.RenderTransform>
                 <CompositeTransform Rotation="-90"/>
             </Button.RenderTransform>
         </Button>
-        <Button Content="18" HorizontalAlignment="Left" Margin="350,100,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnSingle">
+        <Button Content="18" HorizontalAlignment="Left" Margin="494,110,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnSingle" FocusVisualPrimaryBrush="#FFFC0000" Background="#FFF23333" FocusVisualSecondaryBrush="#99FFFFFF">
             <Button.RenderTransform>
                 <CompositeTransform Rotation="-90"/>
             </Button.RenderTransform>
         </Button>
-        <Button Content="13" HorizontalAlignment="Left" Margin="300,240,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnSingle">
+        <Button Content="13" HorizontalAlignment="Left" Margin="444,250,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnSingle" FocusVisualSecondaryBrush="#99000000" Foreground="White" BorderBrush="#FF2F0000" Background="Black">
             <Button.RenderTransform>
                 <CompositeTransform Rotation="-90"/>
             </Button.RenderTransform>
         </Button>
-        <Button Content="4" HorizontalAlignment="Left" Margin="150,240,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Padding="4,4,8,5" Click="BetOnSingle">
+        <Button Content="4" HorizontalAlignment="Left" Margin="300,250,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Padding="4,4,8,5" Click="BetOnSingle" FocusVisualSecondaryBrush="#99000000" Foreground="White" BorderBrush="#FF2F0000" Background="Black">
             <Button.RenderTransform>
                 <CompositeTransform Rotation="-90"/>
             </Button.RenderTransform>
         </Button>
-        <Button Content="26" HorizontalAlignment="Left" Margin="500,170,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnSingle">
+        <Button Content="26" HorizontalAlignment="Left" Margin="634,180,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnSingle" FocusVisualSecondaryBrush="#99000000" Foreground="White" BorderBrush="#FF2F0000" Background="Black">
             <Button.RenderTransform>
                 <CompositeTransform Rotation="-90"/>
             </Button.RenderTransform>
         </Button>
-        <Button Content="29" HorizontalAlignment="Left" Margin="550,170,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnSingle">
+        <Button Content="29" HorizontalAlignment="Left" Margin="679,180,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnSingle" FocusVisualSecondaryBrush="#99000000" Foreground="White" BorderBrush="#FF2F0000" Background="Black" >
             <Button.RenderTransform>
                 <CompositeTransform Rotation="-90"/>
             </Button.RenderTransform>
         </Button>
-        <Button Content="9" HorizontalAlignment="Left" Margin="200,100,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnSingle">
+        <Button Content="9" HorizontalAlignment="Left" Margin="344,110,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnSingle" FocusVisualPrimaryBrush="#FFFC0000" Background="#FFF23333" FocusVisualSecondaryBrush="#99FFFFFF" >
             <Button.RenderTransform>
                 <CompositeTransform Rotation="-90"/>
             </Button.RenderTransform>
         </Button>
-        <Button Content="6" HorizontalAlignment="Left" Margin="150,100,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnSingle">
+        <Button Content="6" HorizontalAlignment="Left" Margin="300,110,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnSingle" FocusVisualSecondaryBrush="#99000000" Foreground="White" BorderBrush="#FF2F0000" Background="Black">
             <Button.RenderTransform>
                 <CompositeTransform Rotation="-90"/>
             </Button.RenderTransform>
         </Button>
-        <Button Content="5" HorizontalAlignment="Left" Margin="150,170,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnSingle">
+        <Button Content="5" HorizontalAlignment="Left" Margin="300,180,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnSingle" FocusVisualPrimaryBrush="#FFFC0000" Background="#FFF23333" FocusVisualSecondaryBrush="#99FFFFFF">
             <Button.RenderTransform>
                 <CompositeTransform Rotation="-90"/>
             </Button.RenderTransform>
         </Button>
-        <Button Content="11" HorizontalAlignment="Left" Margin="250,170,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnSingle">
+        <Button Content="11" HorizontalAlignment="Left" Margin="394,180,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnSingle" FocusVisualSecondaryBrush="#99000000" Foreground="White" BorderBrush="#FF2F0000" Background="Black" >
             <Button.RenderTransform>
                 <CompositeTransform Rotation="-90"/>
             </Button.RenderTransform>
         </Button>
-        <Button HorizontalAlignment="Left" Margin="100,240,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Padding="4,4,8,5" Click="BetOnSingle" Content="1" TabIndex="2147483645">
+        <Button HorizontalAlignment="Left" Margin="255,250,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Padding="4,4,8,5" Click="BetOnSingle" Content="1" FocusVisualPrimaryBrush="#FFFC0000" Background="#FFF23333" Foreground="Black" FocusVisualSecondaryBrush="#99FF0000" >
             <Button.RenderTransform>
                 <CompositeTransform Rotation="-90"/>
             </Button.RenderTransform>
         </Button>
-        <Button Content="8" HorizontalAlignment="Left" Margin="200,170,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnSingle">
+        <Button Content="8" HorizontalAlignment="Left" Margin="344,180,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnSingle" FocusVisualSecondaryBrush="#99000000" Foreground="White" BorderBrush="#FF2F0000" Background="Black" >
             <Button.RenderTransform>
                 <CompositeTransform Rotation="-90"/>
             </Button.RenderTransform>
         </Button>
-        <Button Content="2" HorizontalAlignment="Left" Margin="100,170,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnSingle">
+        <Button Content="2" HorizontalAlignment="Left" Margin="255,180,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnSingle" FocusVisualSecondaryBrush="#99000000" Foreground="White" BorderBrush="#FF2F0000" Background="Black">
             <Button.RenderTransform>
                 <CompositeTransform Rotation="-90"/>
             </Button.RenderTransform>
         </Button>
-        <Button Content="3" HorizontalAlignment="Left" Margin="100,100,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnSingle">
+        <Button Content="3" HorizontalAlignment="Left" Margin="255,110,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnSingle" FocusVisualPrimaryBrush="#FFFC0000" Background="#FFF23333" FocusVisualSecondaryBrush="#99FFFFFF">
             <Button.RenderTransform>
                 <CompositeTransform Rotation="-90"/>
             </Button.RenderTransform>
         </Button>
-        <Button Content="15" HorizontalAlignment="Left" Margin="300,100,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnSingle">
+        <Button Content="15" HorizontalAlignment="Left" Margin="444,110,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnSingle" FocusVisualSecondaryBrush="#99000000" Foreground="White" BorderBrush="#FF2F0000" Background="Black">
             <Button.RenderTransform>
                 <CompositeTransform Rotation="-90"/>
             </Button.RenderTransform>
         </Button>
-        <Button Content="21" HorizontalAlignment="Left" Margin="400,100,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnSingle">
+        <Button Content="21" HorizontalAlignment="Left" Margin="544,110,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnSingle" FocusVisualPrimaryBrush="#FFFC0000" Background="#FFF23333" FocusVisualSecondaryBrush="#99FFFFFF">
             <Button.RenderTransform>
                 <CompositeTransform Rotation="-90"/>
             </Button.RenderTransform>
         </Button>
-        <Button Content="24" HorizontalAlignment="Left" Margin="450,100,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnSingle">
+        <Button Content="24" HorizontalAlignment="Left" Margin="584,110,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnSingle" FocusVisualSecondaryBrush="#99000000" Foreground="White" BorderBrush="#FF2F0000" Background="Black">
             <Button.RenderTransform>
                 <CompositeTransform Rotation="-90"/>
             </Button.RenderTransform>
         </Button>
-        <Button Content="32" HorizontalAlignment="Left" Margin="600,170,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnSingle">
+        <Button Content="32" HorizontalAlignment="Left" Margin="730,180,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnSingle" FocusVisualPrimaryBrush="#FFFC0000" Background="#FFF23333" FocusVisualSecondaryBrush="#99FFFFFF" >
             <Button.RenderTransform>
                 <CompositeTransform Rotation="-90"/>
             </Button.RenderTransform>
         </Button>
-        <Button Content="35" HorizontalAlignment="Left" Margin="650,170,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnSingle">
+        <Button Content="35" HorizontalAlignment="Left" Margin="780,180,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnSingle" FocusVisualSecondaryBrush="#99000000" Foreground="White" BorderBrush="#FF2F0000" Background="Black">
             <Button.RenderTransform>
                 <CompositeTransform Rotation="-90"/>
             </Button.RenderTransform>
         </Button>
-        <Button Content="36" HorizontalAlignment="Left" Margin="650,100,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnSingle">
+        <Button Content="36" HorizontalAlignment="Left" Margin="780,110,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnSingle" FocusVisualPrimaryBrush="#FFFC0000" Background="#FFF23333" FocusVisualSecondaryBrush="#99FFFFFF">
             <Button.RenderTransform>
                 <CompositeTransform Rotation="-90"/>
             </Button.RenderTransform>
         </Button>
-        <Button Content="2 : 1" HorizontalAlignment="Left" Margin="700,170,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Padding="4,4,8,5" Click="BetOnRow2">
+        <Button Tag="Row2" Content="2 : 1" HorizontalAlignment="Left" Margin="830,180,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Padding="4,4,8,5" Click="BetOnStreetRowsHalfs">
             <Button.RenderTransform>
                 <CompositeTransform Rotation="-90"/>
             </Button.RenderTransform>
         </Button>
-        <Button Content="2 : 1" HorizontalAlignment="Left" Margin="700,240,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Padding="4,4,8,5" Click="BetOnRow1">
+        <Button Tag="Row1"  Content="2 : 1" HorizontalAlignment="Left" Margin="830,250,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Padding="4,4,8,5" Click="BetOnStreetRowsHalfs">
             <Button.RenderTransform>
                 <CompositeTransform Rotation="-90"/>
             </Button.RenderTransform>
         </Button>
-        <Button Content="34" HorizontalAlignment="Left" Margin="650,240,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Padding="4,4,8,5" Click="BetOnSingle">
+        <Button Content="34" HorizontalAlignment="Left" Margin="780,250,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Padding="4,4,8,5" Click="BetOnSingle" FocusVisualPrimaryBrush="#FFFC0000" Background="#FFF23333" FocusVisualSecondaryBrush="#99FFFFFF">
             <Button.RenderTransform>
                 <CompositeTransform Rotation="-90"/>
             </Button.RenderTransform>
         </Button>
-        <Button Content="31" HorizontalAlignment="Left" Margin="600,240,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Padding="4,4,8,5" Click="BetOnSingle">
+        <Button Content="31" HorizontalAlignment="Left" Margin="730,250,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Padding="4,4,8,5" Click="BetOnSingle" FocusVisualSecondaryBrush="#99000000" Foreground="White" BorderBrush="#FF2F0000" Background="Black">
             <Button.RenderTransform>
                 <CompositeTransform Rotation="-90"/>
             </Button.RenderTransform>
         </Button>
-        <Button Content="28" HorizontalAlignment="Left" Margin="550,240,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Padding="4,4,8,5" Click="BetOnSingle">
+        <Button Content="28" HorizontalAlignment="Left" Margin="679,250,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Padding="4,4,8,5" Click="BetOnSingle" FocusVisualSecondaryBrush="#99000000" Foreground="White" BorderBrush="#FF2F0000" Background="Black" >
             <Button.RenderTransform>
                 <CompositeTransform Rotation="-90"/>
             </Button.RenderTransform>
         </Button>
-        <Button Content="25" HorizontalAlignment="Left" Margin="500,240,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Padding="4,4,8,5" Click="BetOnSingle">
+        <Button Content="25" HorizontalAlignment="Left" Margin="634,250,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Padding="4,4,8,5" Click="BetOnSingle" FocusVisualPrimaryBrush="#FFFC0000" Background="#FFF23333" FocusVisualSecondaryBrush="#99FFFFFF" >
             <Button.RenderTransform>
                 <CompositeTransform Rotation="-90"/>
             </Button.RenderTransform>
         </Button>
-        <Button Content="22" HorizontalAlignment="Left" Margin="450,240,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Padding="4,4,8,5" Click="BetOnSingle">
+        <Button Content="22" HorizontalAlignment="Left" Margin="584,250,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Padding="4,4,8,5" Click="BetOnSingle" FocusVisualSecondaryBrush="#99000000" Foreground="White" BorderBrush="#FF2F0000" Background="Black">
             <Button.RenderTransform>
                 <CompositeTransform Rotation="-90"/>
             </Button.RenderTransform>
         </Button>
-        <Button Content="19" HorizontalAlignment="Left" Margin="400,240,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Padding="4,4,8,5" Click="BetOnSingle">
+        <Button Content="19" HorizontalAlignment="Left" Margin="544,250,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Padding="4,4,8,5" Click="BetOnSingle" FocusVisualPrimaryBrush="#FFFC0000" Background="#FFF23333" FocusVisualSecondaryBrush="#99FFFFFF" >
             <Button.RenderTransform>
                 <CompositeTransform Rotation="-90"/>
             </Button.RenderTransform>
         </Button>
-        <Button Content="10" HorizontalAlignment="Left" Margin="250,240,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Padding="4,4,8,5" Click="BetOnSingle">
+        <Button Content="10" HorizontalAlignment="Left" Margin="394,250,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Padding="4,4,8,5" Click="BetOnSingle" FocusVisualSecondaryBrush="#99000000" Foreground="White" BorderBrush="#FF2F0000" Background="Black" >
             <Button.RenderTransform>
                 <CompositeTransform Rotation="-90"/>
             </Button.RenderTransform>
         </Button>
-        <Button Content="16" HorizontalAlignment="Left" Margin="350,240,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnSingle">
+        <Button Content="16" HorizontalAlignment="Left" Margin="494,250,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnSingle" FocusVisualPrimaryBrush="#FFFC0000" Background="#FFF23333" FocusVisualSecondaryBrush="#99FFFFFF">
             <Button.RenderTransform>
                 <CompositeTransform Rotation="-90"/>
             </Button.RenderTransform>
         </Button>
-        <Button Content="0" HorizontalAlignment="Left" Margin="55,204,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnSingle" >
+        <Button Content="0" HorizontalAlignment="Left" Margin="215,214,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnSingle" Background="#3374FF00" >
             <Button.RenderTransform>
                 <CompositeTransform Rotation="-90"/>
             </Button.RenderTransform>
         </Button>
-        <Button Content="2 : 1" HorizontalAlignment="Left" Margin="700,100,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnRow3">
+        <Button Tag="Row3" Content="2 : 1" HorizontalAlignment="Left" Margin="830,110,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOnStreetRowsHalfs" >
             <Button.RenderTransform>
                 <CompositeTransform Rotation="-90"/>
             </Button.RenderTransform>
         </Button>
-        <Button Content="00" HorizontalAlignment="Left" Margin="55,135,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOn00">
+        <Button Content="00" HorizontalAlignment="Left" Margin="215,145,0,0" VerticalAlignment="Top" Height="30" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="BetOn00" Background="#3374FF00">
             <Button.RenderTransform>
                 <CompositeTransform Rotation="-90"/>
             </Button.RenderTransform>
         </Button>
-        <Button Content="1st 12" HorizontalAlignment="Left" Margin="100,295,0,0" VerticalAlignment="Top" Height="42" Width="190" Click="BetOn1st12"/>
-        <Button Content="2nd 12" HorizontalAlignment="Left" Margin="310,295,0,0" VerticalAlignment="Top" Height="42" Width="180" Click="BetOn2nd12"/>
-        <Button Content="3rd 12" HorizontalAlignment="Left" Margin="510,295,0,0" VerticalAlignment="Top" Height="42" Width="182" Click="BetOn3rd12"/>
-        <Button Content="1 - 18" HorizontalAlignment="Left" Margin="100,360,0,0" VerticalAlignment="Top" Width="95" Click="BetOn1to18"/>
-        <Button Content="EVEN" HorizontalAlignment="Left" Margin="200,360,0,0" VerticalAlignment="Top" Width="75" Click="BetOnEven"/>
-        <Button Content="19 - 36" HorizontalAlignment="Left" Margin="622,360,0,0" VerticalAlignment="Top" Width="70" Click="BetOn19to36"/>
-        <Button Content="ODD" HorizontalAlignment="Left" Margin="510,360,0,0" VerticalAlignment="Top" Width="80" Click="BetOnOdd"/>
-        <Button Content="Black" HorizontalAlignment="Left" Margin="420,355,0,0" VerticalAlignment="Top" Width="70" Click="BetOnBlack"/>
-        <Button Content="Red" HorizontalAlignment="Left" Margin="310,350,0,0" VerticalAlignment="Top" Width="90" Click="BetOnRed"/>
-        <Button HorizontalAlignment="Left" Margin="140,245,0,0" VerticalAlignment="Top" Width="20" Height="15">
-            <RadioButton Content="RadioButton" HorizontalAlignment="Left" Height="100" Margin="0,9,0,0" VerticalAlignment="Top"/>
-        </Button>
-        <TextBlock HorizontalAlignment="Left" Margin="158,491,0,0" Text="Name" TextWrapping="Wrap" VerticalAlignment="Top" Width="141"/>
-        <Button Content="Next Bet" HorizontalAlignment="Left" Margin="417,598,0,0" VerticalAlignment="Top"/>
-        <TextBlock Name="Coins" HorizontalAlignment="Left" Margin="160,580,0,0" Text="Current Coins" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" Height="75"/>
+        <Button Tag="1st12" Content="1st 12" HorizontalAlignment="Left" Margin="270,305,0,0" VerticalAlignment="Top" Height="42" Width="190" Click="BetOnStreetRowsHalfs"/>
+        <Button Tag="2nd12" Content="2nd 12" HorizontalAlignment="Left" Margin="465,305,0,0" VerticalAlignment="Top" Height="42" Width="180" Click="BetOnStreetRowsHalfs"/>
+        <Button Tag="3rd12" Content="3rd 12" HorizontalAlignment="Left" Margin="650,305,0,0" VerticalAlignment="Top" Height="42" Width="182" Click="BetOnStreetRowsHalfs"/>
+        <Button Tag="1-18" Content="1 - 18" HorizontalAlignment="Left" Margin="270,352,0,0" VerticalAlignment="Top" Width="95" Click="BetOnStreetRowsHalfs" Height="32"/>
+        <Button Tag="Even" Content="EVEN" HorizontalAlignment="Left" Margin="385,352,0,0" VerticalAlignment="Top" Width="75" Click="BetOnStreetRowsHalfs" Height="32"/>
+        <Button Tag="2ndHalf" Content="19 - 36" HorizontalAlignment="Left" Margin="762,352,0,0" VerticalAlignment="Top" Width="70" Click="BetOnStreetRowsHalfs" Height="32"/>
+        <Button Tag="Odd" Content="ODD" HorizontalAlignment="Left" Margin="650,352,0,0" VerticalAlignment="Top" Width="80" Click="BetOnOddEven" Height="32"/>
+        <Button Tag="Black" Content="Black" HorizontalAlignment="Left" Margin="575,352,0,0" VerticalAlignment="Top" Width="70" Click="BetOnStreetRowsHalfs" Height="32" Background="Black" FocusVisualSecondaryBrush="#99FFFFFF" Foreground="White"/>
+        <Button Tag="Red" Content="Red" HorizontalAlignment="Left" Margin="465,352,0,0" VerticalAlignment="Top" Width="90" Click="BetOnOddEven" Height="32" Background="Red"/>
+        <TextBlock x:Name="CurrentCoins" HorizontalAlignment="Left" Margin="263,461,0,0" Text="Current Coins" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" Height="75" Foreground="White"/>
+        <CaptureElement Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="95,680,0,0" VerticalAlignment="Top" Width="100"/>
+        <ListView x:Name="ListView" HorizontalAlignment="Left" Height="276" Margin="990,84,0,0" VerticalAlignment="Top" Width="190" SelectedIndex="0" ReorderMode="Enabled" Foreground="White"/>
+        <TextBlock x:Name="WinLossTextBlock" HorizontalAlignment="Left" Margin="595,460,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="134" Width="273" FontSize="24" Foreground="White"/>
 
 
     </Grid>

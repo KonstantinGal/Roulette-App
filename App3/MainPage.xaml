@@ -9,9 +9,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <AppBarButton HorizontalAlignment="Center" Icon="Accept" Label="Press here to Continue" Margin="0,563,0,0" VerticalAlignment="Top" Height="112" Width="340" Click="OnClick"/>
-        <TextBox x:Name="EnterYourNameBox" HorizontalAlignment="Center" Margin="0,410,0,0" Text="Enter your name" VerticalAlignment="Top" Width="340" TextChanged="EnterYourNameBox_TextChanged"/>
-        <TextBlock x:Name="WelcomeSign" HorizontalAlignment="Center" Margin="0,255,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="271" SelectionChanged="TextBlock_SelectionChanged"/>
-
+        <Image Source="/Assets/background2.png" FocusVisualPrimaryBrush="{x:Null}"/>
+        <AppBarButton HorizontalAlignment="Center" Icon="Accept" Label="Press here to Continue" Margin="0,563,0,0" VerticalAlignment="Top" Height="112" Width="340" Click="OnClick" FontSize="18" Foreground="White"/>
     </Grid>
 </Page>
